@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BlogSGC</title>
+    <!-- Enlace a Font Awesome -->
+    <script src="https://kit.fontawesome.com/a2e0e1e6aa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header style="background-color: #9fd6e1;"> <!--logo, titulo y navegación principal-->
+        <br>
+        <h1 style="text-align: center; color:#ffffff;">Blog 🤍 aprendiendo HTML</h1>
+        <nav style="text-align: center; background-color: aliceblue;"> <!--enlaces a las áreas del sitio-->
+            <a href="#bienvenida" style="margin-right:15px; color:#da38d1; text-decoration: none"> Bienvenida </a>
+            <a href="#planeación" style="margin-right:15px; color:#da38d1; text-decoration: none"> Planeación </a>
+            <a href="#navegación" style="margin-right:15px; color:#da38d1; text-decoration: none"> Navegación </a>
+        </nav>
+        <br>
+    </header>
+
+    <main>
+        <section id="bienvenida"> <!--parte temática del sitio-->
+            <article> <!--unidad completa de contenido-->
+                <h2>Bienvenidos a mi nuevo blog 👋🏼</h2>
+                <p>Hola gente! este es mi primer blog post.<br> Estoy aprendiendo HTML y en este sitio encontrarás un poco de lo que he ido aprendiendo.</p>
+                <video src="https://cdn.pixabay.com/video/2019/10/26/28320-369325356_tiny.mp4" autoplay loop muted  width="500">
+                    Tu navegador no soporta este video.
+                </video>
+            </article>
+            <br>
+            <article>
+                <h4>Una buena manera de aprender es viendo tutoriales en YouTube:</h4>
+                <img src="https://www.trecebits.com/wp-content/uploads/2020/05/Canales-YouTube-Programar.jpg.webp" width="500" usemap="#miMapa" alt="Imagen con mapa">
+                <map name="miMapa">
+                    <area shape="rect" coords="798,444,0,0" href="https://www.youtube.com/watch?v=MJkdaVFHrto" target="_blank" alt="enlace externo">
+                </map>
+            </article>
+        </section>
+        <br>
+
+        <section style="background-color: #f398d8b8;">
+            <br>
+            <h3>Formulario de contacto</h3>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+                <br><br>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad" required>
+                <br><br>
+                <button style="background-color: #df23d5;" type="submit">Enviar</button>
+            </form>
+            <br>
+        </section>
+        <br><hr>
+        <section id="planeación">
+            <article> <!--horario-->
+                <h2>Horario</h2>
+                <table border="1" style="background-color: #ffffff; margin:auto; border-collapse:collapse"
+                 aria-label="Horario semanal de clases en Riwi">
+                    <caption>Horario semanal en RIWI 👾</caption>
+                    <tr style="background-color:#8f23dc">
+                        <th style="color:white">Hora</th>
+                        <th style="color:white">Lunes</th>
+                        <th style="color:white">Martes</th>
+                        <th style="color:white">Mi ércoles</th>
+                        <th style="color:white">Jueves</th>
+                        <th style="color:white">Viernes</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; background-color:#f0bff6ca">6:00 am - 9:00 am</td>
+                        <td style="padding: 10px;">Desarrollo / Clan Lovelace</td>
+                        <td style="padding: 10px;">Desarrollo / Clan Lovelace</td>
+                        <td style="padding: 10px;">Desarrollo / Clan Lovelace</td>
+                        <td style="padding: 10px;">Review</td>
+                        <td style="padding: 10px;">Review</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; background-color:#f0bff6ca">9:00 am - 11:00 am</td>
+                        <td style="padding: 10px;">English / A1 </td>
+                        <td style="padding: 10px;">English / A1 </td>
+                        <td style="padding: 10px;">English / A1 </td>
+                        <td style="padding: 10px;">Review</td>
+                        <td style="padding: 10px;">Chapter AI</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; background-color:#f0bff6ca" >11:00 am - 1:00 pm</td>
+                        <td style="padding: 10px;">Review</td>
+                        <td style="padding: 10px;">Review</td>
+                        <td style="padding: 10px;">Review</td>
+                        <td style="padding: 10px;">Review</td>
+                        <td style="padding: 10px;">Review</td>                    
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; background-color:#f0bff6ca">1:00 pm - 2:00 pm</td>
+                        <td style="padding: 10px;">Review</td>
+                        <td style="padding: 10px;">Review</td>
+                        <td style="padding: 10px;">Review</td>
+                        <td style="padding: 10px;">Review</td>
+                        <td style="padding: 10px;">Chapter Ing.Requisitos</td>
+                    </tr>    
+                </table>
+            </article>
+            <br>
+            <article> <!--lista curso-->
+                <h2>Cursos</h2>
+                <ul>
+                    <li> Desarrollo
+                        <ul>
+                            <li>Python</li>
+                            <li>HTML y CSS</li>
+                        </ul>
+                    </li>
+                    <li>English
+                        <ul>
+                            <li>Introduce myself</li>
+                            <li>Family description</li>
+                            <li>Jobs and occupations</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <br><hr>
+        <section id="navegación">
+            <article> <!--barra navegación-->
+                <h2>Barra de navegación</h2>
+                <nav style="background-color: #e6c5f4; padding: 10px;">
+                    <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; padding: 0; margin: 0;">
+                        <li>
+                            <a href="#" style="text-decoration: none; color: #da38d1;">
+                                <i class="fas fa-home"></i> Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" style="text-decoration: none; color: #da38d1;">
+                                <i class="fas fa-blog"></i> Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" style="text-decoration: none; color: #da38d1;">
+                                <i class="fas fa-envelope"></i> Contacto
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" style="text-decoration: none; color: #da38d1;">
+                                <i class="fas fa-info-circle"></i> Acerca de
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+            <br>
+            <article> <!--cita-->
+                <h3>Cita</h3>
+                <blockquote cite="https://www.goodreads.com/quotes/270684-learning-never-exhausts-the-mind" style="background-color: #9fd6e182; padding: 10px; border-left: 5px solid #0d89a2;">
+                "El aprendizaje nunca agota la mente, solo la enciende."
+                <br> - Leonardo da Vinci
+                </blockquote>
+            </article> <!--texto semántico-->
+            <br>
+            <article>
+                <h3>Texto semántico</h3>
+                <p>
+                    En mi proceso de formación en <strong style="color: #7206c0;">Riwi</strong>, aprender <em>HTML ha sido fundamental</em> para entender cómo se estructura una página web. 
+                    Gracias a su naturaleza semántica, ahora comprendo mejor la importancia de un código limpio y accesible. 
+                    <br><mark style="background-color: #e90cae; color:white">¡HTML es la base de todo sitio web!</mark>
+                </p>
+            </article>
+            <br>            
+        </section>
+    </main>
+
+    <br><hr>
+    <footer>
+        <p style="text-align: center;">&copy; 2025 Blog Susana. Todos los derechos reservados</p>
+        <!--entidad para copyright-->
+    </footer>
+</body>
+
+</html>
