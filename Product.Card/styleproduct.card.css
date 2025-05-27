@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    margin: 0;
+    padding: 50px;
+    justify-content: center;
+    text-align: center;    
+}
+
+
+/* --- Contenedor de la tarjeta --- */
+.card {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 4px 4px 12px 0px rgba(19, 19, 19, 0.39);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* --- Efecto de hover en la tarjeta --- */
+.card:hover {
+  transform: scale(1.10);
+  box-shadow: 8px 8px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Imagen del producto --- */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* --- Título --- */
+.card h2 {
+  color: #592496;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+
+/* --- Precio (destacado visualmente) --- */
+.card .precio {
+  font-size: 20px;
+  color: #592496;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* --- Botón comprar --- */
+.card button {
+  background-color: #e738c1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* --- Efecto hover del botón --- */
+.card button:hover {
+  background-color: #c518ba;
+}
