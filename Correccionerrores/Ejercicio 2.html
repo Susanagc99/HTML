@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Transformaciones CSS</title>
+    <style>
+        .rotate-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transform: rotate(45deg);
+            transition: transform 2s;
+        }
+        
+        .rotate-box:hover {
+            transform: rotate(90deg);
+            background-color: green;
+            transition: background-color 0.5s;
+        }
+        /* Corrigido: Se corrigió la sintaxis de transform: scale y se mejoró la transición en scale-box. */
+        .scale-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 50px;
+            
+        }
+        .scale-box:hover {
+            transform: scale(1.5);
+            background-color: green
+        }
+        /* Corrigido: Se corrigió la sintaxis de transform: translateX y se mejoró la transición en translate-box. */
+        .translate-box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        .translate-box:hover {
+            transform: translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate-box"></div>
+    <div class="scale-box"></div>
+    <div class="translate-box"></div>
+</body>
+</html>
