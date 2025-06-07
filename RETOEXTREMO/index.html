@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos y configuración básica -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee shop</title>
+    <!-- Enlaces a hojas de estilo y fuentes -->
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Encabezado con navegación -->
+    <header>
+        <div class="container"> 
+            <div class="logo">
+                <p><img src="/assets/1.png" 
+                    srcset="/assets/1.png 1x, /assets/1@2x.png 2x" 
+                    alt="logosinfondo"></p>
+            </div>
+            <button class="hamburger" aria-label="Toggle navigation">
+            &#9776;
+            </button>
+            <nav>
+                <a href="#container">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#aboutus">About us</a>
+                <a href="#reservation">Book a Table</a>
+            </nav>
+            <div class="header-buttons">
+                <button id="theme-toggle" aria-label="Cambiar tema" class="theme-toggle">
+                    <!-- Sol -->
+                    <svg id="icon-sun" width="32" height="32" viewBox="0 0 32 32" fill="none" style="display:inline;vertical-align:middle;">
+                        <circle cx="16" cy="16" r="7" fill="#D2B49C"/>
+                        <g stroke="#D2B49C" stroke-width="2">
+                            <line x1="16" y1="2" x2="16" y2="7"/>
+                            <line x1="16" y1="25" x2="16" y2="30"/>
+                            <line x1="2" y1="16" x2="7" y2="16"/>
+                            <line x1="25" y1="16" x2="30" y2="16"/>
+                            <line x1="6.22" y1="6.22" x2="9.76" y2="9.76"/>
+                            <line x1="22.24" y1="22.24" x2="25.78" y2="25.78"/>
+                            <line x1="6.22" y1="25.78" x2="9.76" y2="22.24"/>
+                            <line x1="22.24" y1="9.76" x2="25.78" y2="6.22"/>
+                        </g>
+                    </svg>
+                    <!-- Luna -->
+                    <svg id="icon-moon" width="32" height="32" viewBox="0 0 32 32" fill="none" style="display:none;vertical-align:middle;">
+                        <path d="M22 28c-7.732 0-14-6.268-14-14 0-3.09 1.01-5.945 2.72-8.25.32-.44.04-1.06-.5-1.06-.18 0-.36.07-.5.21C5.13 7.47 3 11.53 3 16c0 8.284 6.716 15 15 15 4.47 0 8.53-2.13 11.1-5.72.14-.14.21-.32.21-.5 0-.54-.62-.82-1.06-.5C27.95 26.99 25.09 28 22 28z" fill="#D2B49C"/>
+                    </svg>
+                </button>
+                <button class="boton" id="login">Login</button>
+            </div>
+        </div>  
+    </header>
+
+    <main>
+        <!-- Sección Hero - Banner principal -->
+        <section id="hero">
+            <h1>ALL WE NEED IS COFFEE</h1>
+            <h3><a href="#menu">Start your day with a good coffee</a></h3>
+            <button class="boton">Order now</button>
+        </section>
+
+        <!-- Sección de Menú - Productos destacados -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div id="products">
+                <div class="card">
+                    <img id="item1" 
+                        src="/assets/frappu.png" 
+                        srcset="/assets/frappu.png 1x, /assets/frappu@2x.png 2x" 
+                        alt="Frappuccino">
+                    <h3>Frappuccino</h3>
+                    <p>A cold, blended coffee drink with milk, ice, and various flavors. Topped with whipped cream.</p>
+                    <button>View more</button>
+                </div>
+
+                <div class="card">
+                    <img id="item2" 
+                        src="/assets/mocha.png" 
+                        srcset="/assets/mocha.png 1x, /assets/mocha@2x.png 2x" 
+                        alt="Mocha Latte">
+                    <h3>Mocha Latte</h3>
+                    <p>A rich espresso blended with steamed milk and chocolate syrup, topped with whipped cream.</p>
+                    <button>View more</button>
+                </div>
+                
+                <div class="card">
+                    <img id="item3" 
+                        src="/assets/caramel.png" 
+                        srcset="/assets/caramel.png 1x, /assets/caramel@2x.png 2x" 
+                        alt="Caramel Frappuccino">
+                    <h3>Caramel Frappuccino</h3>
+                    <p>A sweet blend of coffee, milk and caramel syrup. Finished with whipped cream and drizzle.</p>
+                    <button>View more</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Nosotros - Información de la cafetería -->
+        <section id="aboutus">
+            <h2>About Us</h2>
+            <div id="info">
+                <div>
+                    <p>Nestled in the vibrant streets of Vancouver, Café La Loma is a cozy and soulful coffee shop inspired by the flavors and traditions of Latin America. Our name, La Loma (meaning "the hill"), reflects our love for high-quality, mountain-grown coffee and our passion for creating a peaceful escape in the middle of the city.
+                    At Café La Loma, we serve more than just coffee — we serve connection, creativity, and comfort. From rich espresso drinks and artisanal pastries to soft music and handpicked decor, every detail is designed to make you feel at home.
+                    Whether you're stopping by to study, catch up with a friend, or simply enjoy a slow morning, La Loma invites you to breathe, savor, and stay awhile.
+                    <br><br>☕ Freshly roasted beans
+                    <br>🥐 Homemade Latin-inspired pastries
+                    <br>🎶 Chill atmosphere and local art
+                    <br>📍 Located in Vancouver, BC
+                    <br>Come experience the warmth of the mountain — without ever leaving the city.
+                    </p>
+                </div>
+                <div>
+                    <img src="/assets/us1.jpg" alt="coffee">
+                    <img src="/assets/us2.jpg" alt="insidecoffeeshop">
+                </div>
+            </div>
+            <div id="location">
+                <div class="location-info">
+                    <h3>Come grab a coffee with us</h3>
+                    <p>3711 Moncton St, Richmond, BC V7E 3A5, Canadá</p>
+                    <p>
+                        Monday - Friday: 9am - 3pm <br>
+                        Saturday & Sunday: 9am - 5pm
+                    </p>
+                    <img src="/assets/us3.jpg" alt="local">
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2610.958255277802!2d-123.18623072310872!3d49.125427971369575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485e1d889f9b98f%3A0x5ec0be08a92b9444!2sCannery%20Caf%C3%A9!5e0!3m2!1ses-419!2sco!4v1749137890546!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+        </section>
+        <!-- Sección de Reservas - Formulario de reserva -->
+        <section id="reservation">
+            <h2>Book a Table</h2>
+            <h3>Reserve your spot and let us brew something special for you</h3>
+            <form class="reservation-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+                <button type="submit">Reserve Now</button>
+            </form>
+
+        </section>
+        
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <img src="/assets/1.png" alt="Café La Loma logo" style="width: 50px;">
+        <p>&copy; 2025 - Café La Loma. All rights reserved</p>
+    </footer>
+
+    <!-- Scripts de JavaScript -->
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector("nav");
+
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("show");
+    });
+
+    // Cambio de tema claro/oscuro
+    const themeToggle = document.getElementById('theme-toggle');
+    const iconSun = document.getElementById('icon-sun');
+    const iconMoon = document.getElementById('icon-moon');
+    const body = document.body;
+
+    function setTheme(light) {
+        if (light) {
+            body.classList.add('light');
+            iconSun.style.display = 'none';
+            iconMoon.style.display = 'inline';
+        } else {
+            body.classList.remove('light');
+            iconSun.style.display = 'inline';
+            iconMoon.style.display = 'none';
+        }
+    }
+
+    // Estado inicial: oscuro
+    setTheme(false);
+
+    themeToggle.addEventListener('click', () => {
+        const isLight = !body.classList.contains('light');
+        setTheme(isLight);
+    });
+    </script>
+
+</body>
+</html>

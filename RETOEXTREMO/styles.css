@@ -1,0 +1,772 @@
+/* ===================== VARIABLES Y TEMAS ===================== */
+/* Variables globales y colores para temas claro/oscuro */
+:root {
+    /* Colores principales - Oscuro */
+    --color-primary: #d49440;
+    --color-secondary: #272626;
+    --color-background: #272626;
+    --color-text: #ffffff;
+    --color-card: #f5d6af;
+    --color-button: #da8b25;
+    
+    /* Colores tema claro */
+    --light-background: #fff;
+    --light-text: #4B2E19;
+    --light-card: #F5E9E1;
+    --light-button: #D2B49C;
+    --light-icon: #D2B49C;
+    
+    /* Fuentes */
+    --font-primary: "DM Serif Text", serif;
+    --font-secondary: "Fredoka", sans-serif;
+    
+    /* Tamaños */
+    --header-height: 100px;
+    --border-radius: 30px;
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+}
+
+/* ===================== TEMA CLARO ===================== */
+/* Estilos para el modo claro, afecta: body, header, footer, nav a, #login, .card, .reservation-form, h2, h3, label, .theme-toggle svg */
+body.light {
+    background: var(--light-background);
+    color: var(--light-text);
+}
+body.light header,
+body.light footer {
+    background: var(--light-background);
+    color: var(--light-text);
+    border-color: var(--light-card);
+}
+body.light nav a,
+body.light #login {
+    color: var(--light-text);
+    font-weight: bold;
+}
+body.light .card {
+    background: var(--light-card);
+    color: var(--light-text);
+}
+body.light .card button {
+    background: var(--light-button);
+    color: var(--light-text);
+}
+body.light .card button:hover {
+    background: var(--light-background);
+    color: var(--light-button);
+    font-weight: bold;
+}
+body.light .reservation-form {
+    background: var(--light-card);
+    color: var(--light-text);
+}
+body.light .reservation-form button {
+    background: var(--light-button);
+    color: var(--light-text);
+}
+body.light .reservation-form button:hover {
+    background: var(--light-background);
+    color: var(--light-button);
+}
+body.light h2, body.light h3, body.light label {
+    color: var(--light-text);
+}
+body.light .theme-toggle svg {
+    fill: var(--light-icon);
+}
+
+/* ===================== RESET Y CONFIGURACIÓN BÁSICA ===================== */
+/* Reset de box-sizing y estilos base */
+* {
+    box-sizing: border-box;
+}
+
+/* ===================== HEADER Y NAVEGACIÓN ===================== */
+/* Contenedor principal del header y botones, afecta: .container, .header-buttons, .theme-toggle, nav a, nav a:hover, .hamburger */
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Estilos del botón de tema */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.2);
+}
+
+/* Configuración de scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===================== BODY Y HERO ===================== */
+/* Estilos base del body y sección hero, afecta: body, #hero, #hero h1, #hero h3, #hero a, #hero h3:hover */
+body {
+    background-color: #272626;
+    margin: 0;
+    font-family: "DM Serif Text", serif;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal del header */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    place-items: center;
+    gap: 90px;
+    padding: 0;
+    height: 100px;
+    
+}
+
+/* Estilos del logo */
+.logo img{
+    width: 80px;
+}
+
+/* Estilos de navegación */
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.3em;
+}
+
+/* Efectos hover en navegación */
+nav a:hover{
+    color: #d49440;
+    transform: scale(1.2);
+}
+
+/* Estilos de botones */
+.boton{
+    font-family: "Fredoka", sans-serif;
+    width: 120px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 1.5px solid #d49440;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 2.0s ease;
+}
+
+/* Efectos hover en botones */
+.boton:hover{
+    background-color: #d49440;
+    transform: scale(1.2);
+}
+
+/* Animación de entrada para el hero */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sección Hero - Banner principal */
+#hero {
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5),
+        rgba(255, 255, 255, 0.24)
+    ) 
+    ,url("/assets/coffeep.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    border-radius: 30px;
+}
+
+#hero h1{
+    font-family: "Fredoka", sans-serif;
+    letter-spacing: 2px;
+    font-size: 4.5em;
+}
+
+#hero h3{
+    font-family: "DM Serif Text", serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    background-color: #ffffffc5;
+    padding: 10px;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 40px;  
+}
+
+#hero a{
+    text-decoration: none;
+    color: #272626;
+}
+
+#hero h3:hover{
+    transform: rotate(5deg)
+}
+
+h2 {
+    font-family: "Fredoka", sans-serif;
+    letter-spacing: 2px;
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 60px;
+    padding: 10px;
+    margin-bottom: 0;
+
+}   
+
+/* ===================== MENÚ Y PRODUCTOS ===================== */
+/* Estilos para el menú y tarjetas de productos, afecta: #products, .card, .card h3, .card p, .card:hover, .card button, .card button:hover, .card button:active */
+#products {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+    padding: 50px;
+    place-items: center;
+    margin-top: 20px;
+}
+
+#products div:nth-child(1) {
+  grid-column-start: 2;
+}
+#products div:nth-child(2) {
+  grid-column-start: 3;
+}
+#products div:nth-child(3) {
+  grid-column-start: 4;
+}
+
+/* Estilos de tarjetas individuales */
+.card {
+    background-color: #f5d6af;
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+#item1{
+    width: 245px; 
+    margin-top: -110px; 
+    margin-bottom: -8px;
+}
+
+#item2{
+    width: 200px; 
+    margin-top: -80px; 
+    margin-bottom: 0px;
+}
+
+#item3{
+    width: 145px; 
+    margin-top: -80px; 
+    margin-bottom: 0px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    color: #352d32;
+}
+
+.card p {
+    font-size: 1.0em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    flex-grow: 1;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    background-color: #e9b673;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover h3{ 
+    color: white;
+}
+
+.card button {
+    font-family: "DM Serif Text", serif;
+    background-color: #da8b25;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, color 0.3 ease, transform 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.card button:active{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    transform: rotate(5deg);
+}
+
+/* ===================== SOBRE NOSOTROS ===================== */
+/* Estilos para la sección About Us, afecta: #aboutus, #info, #info div, #info p, #info img */
+#aboutus {
+    justify-content: center;
+}
+
+#info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 20px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.0em;
+    align-items: center;
+    margin-top: 0;
+}
+
+#info div{
+    display: flex;
+
+}
+
+#info p{
+    align-items: center;
+    padding: 30px;
+    font-size: 1.0em;
+    margin-top: 0;
+}
+
+#info img{
+    width: 230px;
+    height: 360px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+/* ===================== UBICACIÓN ===================== */
+/* Estilos para la sección de ubicación, afecta: #location, .location-info, .location-info h3, .location-info p, .location-info img, .location-map, .location-map iframe */
+#location{
+    display: flex;
+    background-color: #da8b25;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 450px;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.location-info {
+    color: white;
+    padding: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.location-info h3 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.location-info p {
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.location-info img {
+    width: 180px;
+    height: 270px;
+    object-fit: cover;
+    border: 10px solid white;         /* marco blanco */
+    border-bottom: 30px solid white;  /* más espacio abajo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* sombra sutil */
+    background-color: white;
+    border-radius: 10px;
+}
+
+.location-info img:hover{
+    transform: rotate(5deg);
+}
+
+.location-map {
+  flex: 1.5;
+  height: 100%;
+}
+
+.location-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ===================== FORMULARIO DE RESERVAS ===================== */
+/* Estilos para el formulario de reservas, afecta: .reservation-form, .reservation-form label, .reservation-form input, .reservation-form button, .reservation-form button:hover, .reservation-form button:active, #reservation h3 */
+.reservation-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f5d6af;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Fredoka", sans-serif;
+}
+
+.reservation-form label {
+    color: #272626;
+    font-weight: bold;
+}
+
+.reservation-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1em;
+}
+
+.reservation-form button {
+    background-color: #da8b25;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-family: "DM Serif Text", serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    width: 35%;
+    position:  relative; left: 145px;
+
+}
+
+.reservation-form button:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.reservation-form button:active{
+    background-color: transparent;
+    color:  #da8b25;
+    transform: rotate(5deg);
+}
+
+#reservation h3{
+    color: rgb(41, 41, 41);
+    font-family: "DM Serif Text", serif;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* ===================== PIE DE PÁGINA ===================== */
+/* Estilos para el footer */
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    
+}
+
+/* Menú hamburguesa para móvil */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===================== MEDIA QUERIES ===================== */
+/* Adaptaciones responsivas para tablet y móvil */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .container {
+        display: block;
+        height: auto;
+        padding: 0;
+        gap: 0;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .header-buttons {
+        position: absolute;
+        right: 30px;
+        top: 15px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .boton {
+        padding: 8px 16px;
+        text-align: center;
+        margin: 0;
+    }
+    #hero {
+        height: auto;
+        padding: 30px 10px;
+    }
+    #hero h1 {
+        font-size: 2.5em;
+    }
+    #hero h3 {
+        font-size: 1.2em;
+    }
+    #products{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;        
+    }
+    #info {
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap: 10px;
+    }
+    #info p {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+    #location {
+        flex-direction: column;
+        height: auto;
+        max-width: 100%;
+        margin: 30px 10px;
+        padding: 20px;
+    }
+    .location-info {
+        padding: 20px;
+        text-align: center;
+    }
+    .location-info h3 {
+        font-size: 1.5em;
+    }
+    .location-info p {
+        font-size: 0.95em;
+    }
+    .location-map {
+        width: 100%;
+        height: 250px;
+    }
+    .location-map iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .reservation-form {
+        padding: 20px;
+        width: 90%;
+    }
+    .reservation-form button {
+        position: static;
+        width: 100%;
+        align-self: center;
+    }
+    .theme-toggle {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        position: relative;
+        padding: 10px 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+        height: auto;
+        gap: 0;
+    }
+    .hamburger {
+        display: block;
+        position: static;
+        order: 1;
+        margin: 0;
+    }
+    .logo {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 auto;
+        width: auto;
+        margin: 0;
+    }
+    .header-buttons {
+        order: 3;
+        position: static;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 0;
+    }
+    #login {
+        display: none;
+    }
+    .theme-toggle {
+        font-size: 1.5em;
+        margin-left: 0;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.95);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    nav.show {
+        display: flex;
+    }
+    nav a {
+        color: var(--color-text);
+    }
+    .boton {
+        width: 150px;
+    }
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header nav a {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+    .hero-section h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .hero-section p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .content {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+    #productos{
+        padding-top: 200px;
+    }
+    footer {
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        font-size: 12px;
+        gap: 10px;
+    }
+    footer p{
+        justify-content: center;
+        margin: 0;
+    }
+    footer img{
+        margin: 0;
+    }
+    button,
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+    body:not(.light) nav a {
+        color: #352d32;
+    }
+    body.light .hamburger {
+        color: var(--light-text);
+    }
+}
+
+/* ===================== ICONOS ===================== */
+.theme-toggle svg {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+/* ===================== AJUSTES TEMA CLARO EN ABOUT US ===================== */
+body.light #aboutus,
+body.light #aboutus p {
+    color: #111 !important;
+}
+
