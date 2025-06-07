@@ -26,11 +26,11 @@ Este proyecto es una landing page para una tienda de café ficticia llamada **Ca
 
 ### 🧋 Sección principal – Hero
 
-![Hero](./assets/d49fb172-f1f4-492e-8376-08505c89dc42.png)
+![Menú](./assets/4fa02df6-9ef5-481c-b5b6-97838aa51f28.png)
 
 ### 🍫 Nuestro menú
 
-![Menú](./assets/4fa02df6-9ef5-481c-b5b6-97838aa51f28.png)
+![Hero](./assets/d49fb172-f1f4-492e-8376-08505c89dc42.png)
 
 ### 🧡 Sobre nosotros
 
