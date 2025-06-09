@@ -1,10 +1,10 @@
 # Prueba desempeño HTML & CSS
 
 ## 📁 Contenido de la carpeta ZIP `Prueba HTML&CSS`
-**`index.html`**: ✅ Archivo principal con la estructura de la página.
-**`indexpry.html`**: ✅ Archivo secundario con la estructura del apartado proyectos del portafolio.
-**`indexcont.html`**: ✅ Archivo secundario con la estructura del apartado contacto del portafolio.
-**`styles.css`**: ✅ Archivo de estilos con diseño responsivo, animaciones y más.
+- **`index.html`**: ✅ Archivo principal con la estructura de la página.
+- **`indexpry.html`**: ✅ Archivo secundario con la estructura del apartado proyectos del portafolio.
+- **`indexcont.html`**: ✅ Archivo secundario con la estructura del apartado contacto del portafolio.
+- **`styles.css`**: ✅ Archivo de estilos con diseño responsivo, animaciones y más.
 
 ## 🚀 ¿Cómo ejecutar el sitio web?
 
@@ -14,7 +14,7 @@
 4. Da doble clic sobre el archivo `index.html` o ábrelo en tu navegador.
 5. Explora la página, navega entre secciones y observa el diseño responsivo.
 
-Nombre: Susana Gutiérrez Callejas
-Clan: Lovelace 
-Correo: susigc0304@gmail.com
-Documento: 1020490923
+- Nombre: Susana Gutiérrez Callejas
+- Clan: Lovelace 
+- Correo: susigc0304@gmail.com
+- Documento: 1020490923
