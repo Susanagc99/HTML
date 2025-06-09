@@ -13,3 +13,8 @@
 3. Abre la carpeta `Prueba HTML&CSS`.
 4. Da doble clic sobre el archivo `index.html` o ábrelo en tu navegador.
 5. Explora la página, navega entre secciones y observa el diseño responsivo.
+
+Nombre: Susana Gutiérrez Callejas
+Clan: Lovelace 
+Correo: susigc0304@gmail.com
+Documento: 1020490923
