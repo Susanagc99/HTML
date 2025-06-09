@@ -14,6 +14,7 @@
 4. Da doble clic sobre el archivo `index.html` o ábrelo en tu navegador.
 5. Explora la página, navega entre secciones y observa el diseño responsivo.
 
+## INFO
 - Nombre: Susana Gutiérrez Callejas
 - Clan: Lovelace 
 - Correo: susigc0304@gmail.com
